@@ -1,0 +1,18 @@
+[theme]
+primaryColor="#ffe200"
+backgroundColor="#000000"
+secondaryBackgroundColor="#0117de"
+textColor="#ffffff"
+
+[server]
+# Page configuration
+enableStaticServing = true
+enableXsrfProtection = true
+maxUploadSize = 200
+
+
+[ui]
+# Hide deployment button and menu
+hideTopBar = true
+# Show footer
+showFooter = false
