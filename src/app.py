@@ -4,11 +4,12 @@ import streamlit as st
 import json
 import pickle
 import numpy as np
+from PIL import Image
 
 with open('/workspaces/Color_CC/models/Lineal_Regressor_Color_Club.sav', 'rb') as file:
     model = pickle.load(file)
     
-#with open('/workspaces/Color_CC/models/Random_Forest_Color_Club.sav', 'rb') as file:
+##with open('/workspaces/Color_CC/models/Random_Forest_Color_Club.sav', 'rb') as file:
 #    model = pickle.load(file)
 
 
@@ -30,7 +31,9 @@ st.set_page_config(
     page_icon="🍺",
     layout="wide"
 )
-
+# Replace 'path/to/your/image.jpg' with your actual image path
+image = Image.open('/workspaces/Color_CC/data/raw/LogoBavariaBlanco-2022 (1)_0.png')
+st.image(image, width=50)  # width=None means full width
 
 st.title("Predicción del color por cocimiento de la Club Colombia 🍺")
 st.markdown("""
