@@ -6,7 +6,7 @@ import pickle
 import numpy as np
 from PIL import Image
 
-with open('/workspaces/Color_CC/models/Lineal_Regressor_Color_Club.sav', 'rb') as file:
+with open('../src/Lineal_Regressor_Color_Club.sav', 'rb') as file:
     model = pickle.load(file)
     
 ##with open('/workspaces/Color_CC/models/Random_Forest_Color_Club.sav', 'rb') as file:
