@@ -32,7 +32,7 @@ st.set_page_config(
     layout="wide"
 )
 # Replace 'path/to/your/image.jpg' with your actual image path
-image = Image.open('/workspaces/Color_CC/data/raw/LogoBavariaBlanco-2022 (1)_0.png')
+image = Image.open('../src/LogoBavariaBlanco-2022 (1)_0.png')
 st.image(image, width=50)  # width=None means full width
 
 st.title("Predicción del color por cocimiento de la Club Colombia 🍺")
